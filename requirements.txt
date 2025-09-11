@@ -1,0 +1,8 @@
+fastapi
+uvicorn
+pydantic>=2
+python-dotenv
+httpx
+requests
+openai>=1.0.0
+Flask==0.9
