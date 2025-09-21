@@ -12,7 +12,7 @@ setup(
         "httpx",
         "requests",
         "openai>=1.0.0",
-        "Flask==2.0.0",
+        "Flask==3.1.2",
     ],
     entry_points={
         "console_scripts": [
