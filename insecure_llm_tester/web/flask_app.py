@@ -9,7 +9,7 @@ svc = ChatService()
 @app.route("/chat", methods=["POST"])
 def chat():
     # No input validation. Accept form or JSON.
-    data = request.json or request.form or {}
+    data = request.get_json(silent=True) or request.form or {}
     provider = data.get("provider", "openai")
     prompt = data.get("prompt", "")
     system = data.get("system")
